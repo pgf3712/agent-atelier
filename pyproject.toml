@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paula-indy-agent-atelier"
+version = "0.1.0"
+description = "A bilingual, offline-first educational lab for understanding AI agents."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Paula García Fernández" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "ruff>=0.9"]
+real = ["openai>=2,<3"]
+
+[project.scripts]
+agent-atelier = "agent_atelier.cli:main"
+agent-atelier-evaluate = "agent_atelier.evaluate_cli:main"
+agent-atelier-preview = "agent_atelier.preview:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_atelier"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

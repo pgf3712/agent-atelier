@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this educational project, please cite it as follows."
+title: "Paula & Indy's Agent Atelier"
+type: software
+authors:
+  - family-names: "García Fernández"
+    given-names: "Paula"
+version: 0.1.0
+date-released: 2026-07-18
+url: "https://github.com/pgf3712/paula-indy-agent-atelier"
