@@ -1,0 +1,42 @@
+name: Learning proposal
+description: Suggest a clearer exercise, explanation or evaluation case.
+title: "[Learning]: "
+labels: ["education"]
+body:
+  - type: dropdown
+    id: chapter
+    attributes:
+      label: Chapter
+      options:
+        - "0 — Agent basics"
+        - "1 — Minimal loop"
+        - "2 — Tools"
+        - "3 — State and memory"
+        - "4 — Planning"
+        - "5 — Observability"
+        - "6 — Guardrails"
+        - "7 — Evaluation"
+        - "8 — Human approval"
+        - "9 — Cost and latency"
+        - "10 — Final application"
+        - "Repository-wide"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed learning outcome
+      description: State what a learner should be able to explain or demonstrate afterwards.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How could it be evaluated?
+      description: Prefer a concrete deterministic check over a vague quality score.

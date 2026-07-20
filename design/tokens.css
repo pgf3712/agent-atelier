@@ -1,0 +1,35 @@
+:root {
+  --color-canvas-deep: #081426;
+  --color-surface-panel: #10223b;
+  --color-surface-raised: #203a5f;
+  --color-accent-pink: #c67aa8;
+  --color-accent-coral: #e78474;
+  --color-accent-gold: #f5c451;
+  --color-accent-mint: #63d297;
+  --color-accent-sky: #6ebbff;
+  --color-text-primary: #f8f4ee;
+  --color-text-secondary: #b9c7da;
+
+  --radius-small: 6px;
+  --radius-medium: 10px;
+  --radius-large: 16px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --motion-fast: 120ms;
+  --motion-normal: 200ms;
+  --motion-slow: 360ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-normal: 0ms;
+    --motion-slow: 0ms;
+  }
+}

@@ -1,0 +1,34 @@
+name: Bug report
+description: Report reproducible behaviour in the offline course or interface
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Paula & Indy's Agent Atelier. Never include API keys or private data.
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter and mode
+      placeholder: "Chapter 4 · Learning Mode"
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: What happened?
+      description: Include the steps, expected result and actual result.
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Interface language
+      options: [English, Spanish]
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "Windows 11, Python 3.11, Chrome"
